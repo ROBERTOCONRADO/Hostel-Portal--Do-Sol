@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./imgHotel/favicon.ico" type="image/x-icon">
+    <title>Hostel Portal do Sol</title>
+    <link rel="stylesheet" media="" href="sttyle.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');/*font-footer*/
+
+
+        :root {
+          --cor1:black;
+          --cor2:rgba(190, 161, 0, 0.819);
+          --cor3:#7a5c40;
+        }
+
+        body {
+          background-color: #8c7f3754;
+        }
+        .nav {
+            background-image: url(./imgHotel/01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 550px;
+            margin-bottom: 30px;
+            
+        }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.928);
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 10px rgb(0, 0, 0);
+            position: sticky;
+            top: 0;
+        } .nav-link:hover {
+          color: var(--cor3);
+        }
+        h6 {
+            font-family: 'Josefin Slab', serifa;
+            font-size: 2.8rem;
+            text-align: center;
+            color: var(--cor3);
+        }
+        .btn-primary {
+            color: rgb(255, 255, 255);
+            background-color: var(--cor3);
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: rgba(0, 0, 0, 0.868);
+        }
+        h2 {
+            margin-left: 850px;
+        }
+        p {
+            margin-left: 700px;
+        }
+
+        .global-hotel-h3-services {
+          text-align: center;
+          margin:30px;
+          color: var(--cor3);
+        }
+        .row {
+          margin-bottom: 30px;
+          color: var(--cor3);
+        }
+        .carousel {
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .list-group-item-act {
+            font-size: 1.5rem;
+            text-align: center;
+            color: var(--cor2);
+            font-weight: 700;
+            max-width: 400px;
+        }
+        .list-group-item-act:hover {
+          background-color: rgba(0, 0, 0, 0.39);
+          color:var(--cor3);
+        }
+        .list-group {
+            margin-right: 50px;
+            float: right;
+            width: 50%;
+            margin-top: 65px;
+            
+        }
+        .card-title {
+            font-family: 'PT Sans Narrow', sem serifa;
+            font-size: 2rem;
+            color: var(--cor2);
+        }
+        .center {
+          font-family: 'PT Sans Narrow', sem serifa;
+          font-size: 2rem;
+          color: var(--cor2);
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        p.p1card-texto {
+            margin: 20px 0px;
+            font-size: 1.4rem;
+        }
+        p.card-texto {
+            padding: 20px 80px;
+            margin: 0px;
+            font-size: 1.4rem;
+        }
+        #icone {
+          width: 52px;
+          margin-left: 15px;
+        }
+        .whatsapp-link {
+          color: var(--cor3);
+          font-size: 60px;
+        }
+        .whatsapp-link:hover {
+          color: green;
+        }
+        .whatsapp-link-footer {
+          color: var(--cor3);
+          font-size: 30px;
+          margin-top: 10px;
+        }
+        .whatsapp-link-footer:hover {
+          color: green;
+        }
+        .fa-envelope-o {
+          color: var(--cor3);
+          font-size: 20px;
+          margin-top: 20px;
+        }
+        .fa-envelope-o:hover {
+          cursor: pointer;
+          color:rgba(255, 255, 255, 0.578);
+        }
+        .fa-phone-square {
+          color: var(--cor3);
+          font-size: 20px;
+          margin-top: 20px;
+        }
+        .fa-phone-square:hover {
+          cursor: pointer;
+          color:rgba(255, 255, 255, 0.578);
+        }
+
+        .fa-instagram {
+          color: var(--cor3);
+          font-size: 20px;
+          margin-top: 30px;
+        }
+        .fa-instagram:hover {
+          cursor: pointer;
+          color:rgba(255, 255, 255, 0.578);
+        }
+        #contato h4 {
+          font-weight: bolder;
+        }
+        #quartos {
+          font-size: 57px;
+          margin-left: 50px;
+          float: right;
+        }
+        #quartos:hover {
+          color: #E33E5F;
+        }
+        footer {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            margin-top: 10px;
+            flex-direction: column;
+            color: var(--cor3);
+            font-family: 'Raleway', sem serifa;
+        }
+        #em {
+          color: #7a5c40;
+        }
+        
+        #btfooter {
+          background-color: var(--cor3);
+          border-radius: 5px;
+          padding: 10px 15px;
+          font-weight: bold;
+          margin-top: 30px;
+          color: darkgrey;
+        }
+        #btfooter:hover {
+          background-color:rgba(255, 255, 255, 0.578);
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+        }
+        .dropdown {
+          font-family:Arial, Helvetica, sans-serif;
+        }
+        #dropdownMenuButton1 {
+          color: rgba(245, 237, 196, 0.507);
+          font-weight: bold;
+          background-color: #7a5c40;
+          width: 120px;
+        }
+        .dropdown-menu {
+          background-color: #7a5c404b;
+          width: 30px;
+        }
+        .dropdown-item {
+          color: white;
+          font-weight: bold;
+        }
+        em {
+          color: var(--cor2)
+        }
+        #em {
+          color: var(--cor3)
+        }
+        #img {
+          width: 80%;
+          height: 280px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
+          box-shadow: 1px 1px 10px rgb(110, 110, 110);
+        }
+        #img:hover {
+          transform: scale(1.04);
+          transition: 0.5s; 
+        }
+        
+        .mb-3 {
+          float: right;
+          margin-right: 100px;
+          margin-top: 10px;
+        }
+        .text {
+          color: #7a5c40;
+        }
+        .h55 {
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./boots.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#carouselExampleCaptions">Fotos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#qquartos">Quartos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./boots.html">Home</a></li>
+            <li><a class="dropdown-item" href="#carouselExampleCaptions">Fotos</a></li>
+            <li><a class="dropdown-item" href="#qquartos">Quartos</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+    </ul>
+    <div class="card">
+        <div class="card-header">
+            <h6>HOSTEL PORTAL DO SOL E POUSADA</h6>
+        </div>
+        
+        
+
+        <div class="container-fluid global-hotel-bg-services global-no-padding global-vspacing-block global-v-margin-spacing-block">
+          <div class="container">
+            <h3 class="global-hotel-h3-services">SERVIÇOS OFERECIDOS</h3>
+            <div class="row">
+              <div class="col-md-3 global-hotel-border-services">
+                <ul class="global-hotel-services-ul">
+                  <li>Recepção das 6:00 ÀS 20:00 hrs</li>
+                  <li>Quartos com cama de casal</li>
+                  <li>Funcionamento todos os dias</li>
+                  <li>Acesso à internet</li>
+                </ul>
+              </div>
+              <div class="col-md-3 global-hotel-border-services">
+                <ul class="global-hotel-services-ul">
+                  <li>Wi-Fi grátis </li>
+                  <li>Banheiro privativo</li>
+                  <li>Piso frio em todas as unidades</li>
+                  <li>Serviço de despertar</li>
+                </ul>
+              </div>
+              <div class="col-md-3 global-hotel-border-services">
+                <ul class="global-hotel-services-ul">
+                  <li>Jardim</li>
+                  <li>Café da manhã</li>
+                  <li>Ducha</li>
+                  <li>Ar condicionado em algumas unidades</li>
+                </ul>
+              </div>
+              <div class="col-md-3 global-hotel-border-services">
+                <ul class="global-hotel-services-ul">
+                  <li>Governança</li>
+                  <li>Varanda em algumas unidades</li>
+                  <li>Voltagem: 110 Volts</li>
+                  <li>Telefonia digital</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        
+        <div class="card-body">
+          <h5 class="card-title">Sobre</h5>
+          <h5 class="text">Somos do HOSTEL PORTAL DO SOL. Hotel, Albergue, Pousada com mensais e quartos para estudantes! <br><br>
+
+            WI- FI.  Suítes com ar condicionado, televisão, e frigobar. <br> Suite de Luxo: Cama terapêutica. <br><br>
+            Quartos individuais, duplos, triplos ou quádruplos com diárias, semanais, mensais e preços à partir de R$ 35,00 e mensais a partir de R$ 500,00 + quarto compartilhado.  <br>
+          
+          </h5>
+        </div>
+        <br><br>
+      </div>
+      
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgHotel/01.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ambiente Agradável</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgHotel/02.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Área Lazer</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgHotel/05.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quarto</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgHotel/quarto 2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quarto</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgHotel/quarto 3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Quarto</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgHotel/quarto1.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conforto</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HOSTEL PORTAL DO SOL E POUSADA</h5>
+            <h5 class="card-text">Jacobina -BA é um lugar tranquilo para suas hospedagens nas suas viagens nas férias e fugir do tumulto.
+              Por aqui o sossego é realmente garantido, e vai fazer a combinação perfeita para paraísos naturais com condições ideais para a prática de esportes, de trilhas e muita aventura pois a cidade é cercada de rios, cachoeiras, matas e morros, ideais para fazer trilhas passeios e piqueniques.</h5><br>
+            <img id="img" src="./imgHotel/cachoeira-veu-de-noiva.jpg" alt=""><br>
+            <h5 class="card-text">Se você é fã de montanhismo, rapel em cachoeiras, então, não precisa pensar duas vezes para colocar Jacobina nos seus destinos das férias.
+              Por aqui Turismo, Aventuras, também combinam com longas horas de descanso. 
+              O centro histórico da cidade pode ser incluído na parte relaxante do roteiro. O local é patrimônio histórico e tem casarões, museus e igrejas.
+              Em um ponto estratégico, POUSADA E HOSTEL PORTAL DO SOL  é um convite para relaxar. Aqui, você vai, sem dúvida, repor energias para aproveitar as atividades na natureza.</h5><br>
+              <img id="img" src="./imgHotel/devido-a-falta-de-chuva.jpg" alt=""><br>
+              <h5 class="card-title">Nosso Hotel</h5>
+              <h5 class="card-text">POUSADA E HOSTEL PORTAL DO SOL em um ponto estratégico, é um convite para relaxar. Por aqui Trabalho, Lazer, Turismo, Aventuras.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">DIARIAS</h5>
+            <h6 class="card-text"><strong><em>LUXO:</em></strong><br> 90,00 - Ar Condicionado <br> Tv - Frigobar <br> Cama Terapêutica</h6><br>
+            <h6 class="card-text"><strong><em>EXECUTIVO:</em></strong><br> 70,00 <br> Ar + TV</h6><br>
+            <h6 class="card-text"><strong><em>SIMPLES:</em></strong><br> 50,00  <br> Ventilador + Tv</h6>
+            <h5 class="h55">Para casal, o valor é somado com um desconto de 20%.
+              <h5 class="h55">Crianças de 7 aos 12 anos não paga.</h5>
+              <h5 class="h55">Adolescentes até 15 anos, paga 50% da diária.</h5><br><br>
+              <a href="https://wa.me/5577991556513?text=Óla!%20Eu%20gostaria%20de%20um%20quarto%20Individual." target="_blank"><img id="icone" src="https://img.icons8.com/color/48/000000/whatsapp--v4.png"/></a>
+              <a href="https://www.instagram.com/hostel.portal/" target="_blank"><img id="icone" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a><br><br>
+            
+            
+            <h5 class="card-title">MENSAL</h5>
+            <h5 class="center">VALORES INDIVIDUAIS</h5>
+            <h6 class="card-text">900,00 com ar condicionado 
+                    750,00 sem ar condicionado</h6> <br>
+                    
+                    <a href="https://wa.me/5577991556513?text=Óla!%20Eu%20gostaria%20de%20um%20quarto%20Individual." target="_blank"><img id="icone" src="https://img.icons8.com/color/48/000000/whatsapp--v4.png"/></a>
+                    <a href="https://www.instagram.com/hostel.portal/" target="_blank"><img id="icone" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+      <footer id="contato">
+          <h4><strong><em id="em">R. Pres. Kenedy, 64 - Estacao, Jacobina - BA</em></strong></h4>
+          
+          <a class="whatsapp-link-footer" href="https://wa.me/5577991556513?text=Óla!%20Eu%20gostaria%20de%20um%20quarto%20." target="_blank" class="btn btn-primary"><i class="fa fa-whatsapp"> (074) 8821 3880</i></a>
+
+          <a class="whatsapp-link-footer" href="https://wa.me/5577991556513?text=Óla!%20Eu%20gostaria%20de%20um%20quarto%20." target="_blank" class="btn btn-primary"><i class="fa fa-whatsapp"> 071 (9) 9667 1246</i></a>
+
+          <a class="whatsapp-link-footer" href="https://wa.me/5577991556513?text=Óla!%20Eu%20gostaria%20de%20um%20quarto%20." target="_blank" class="btn btn-primary"><i class="fa fa-whatsapp"> 074 (9) 9974 8022</i></a>
+          
+
+          <a href="mailto:portalhostel23@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"> <strong>portalhostel23@gmail.com</strong><br></i></a>
+          
+
+          <a href="https://www.instagram.com/hostel.portal/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"> @hostel.portal</i></a>
+          
+          <a href="boots.html"><button id="btfooter">Voltar para o Início</button></a>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    
+  </body>
+</html>
+
+
+

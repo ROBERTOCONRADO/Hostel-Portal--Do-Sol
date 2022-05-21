@@ -1,0 +1,12 @@
+@media (min-width: 600px)
+{
+  .dropdown
+   {
+    display: none;
+   }
+}
+@media (max-width:600px) {
+    .nav-item {
+        display: none;
+    }
+}
